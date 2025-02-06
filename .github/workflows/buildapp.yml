@@ -159,7 +159,7 @@ jobs:
         id: create_release
         uses: qnblackcat/action-gh-release@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DROPBOX_ACCESS_TOKEN }}
           UYOU_VERSION: ${{ inputs.uyou_version }}
           YOUTUBE_VERSION: ${{ steps.prepare_youtube.outputs.youtube_version }}
           DRAFT: ${{ inputs.create_release }}
